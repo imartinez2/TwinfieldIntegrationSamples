@@ -92,4 +92,9 @@ public partial class AuthorizeDialog : Form
 
 		Close();
 	}
+
+	private void webView_Click(object sender, EventArgs e)
+	{
+
+	}
 }

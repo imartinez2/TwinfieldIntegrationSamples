@@ -39,21 +39,22 @@ namespace OAuth2ExampleApp
 			this.webView.DefaultBackgroundColor = System.Drawing.Color.White;
 			this.webView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.webView.Location = new System.Drawing.Point(0, 0);
-			this.webView.Margin = new System.Windows.Forms.Padding(4);
 			this.webView.Name = "webView";
-			this.webView.Size = new System.Drawing.Size(1182, 853);
+			this.webView.Size = new System.Drawing.Size(886, 693);
 			this.webView.Source = new System.Uri("about:blank", System.UriKind.Absolute);
 			this.webView.TabIndex = 1;
 			this.webView.ZoomFactor = 1D;
 			this.webView.NavigationStarting += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs>(this.webView_NavigationStarting);
+			this.webView.Click += new System.EventHandler(this.webView_Click);
 			// 
 			// AuthorizeDialog
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1182, 853);
+			this.ClientSize = new System.Drawing.Size(886, 693);
 			this.Controls.Add(this.webView);
-			this.MinimumSize = new System.Drawing.Size(850, 600);
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.MinimumSize = new System.Drawing.Size(642, 495);
 			this.Name = "AuthorizeDialog";
 			this.Text = "Authorize";
 			((System.ComponentModel.ISupportInitialize)(this.webView)).EndInit();
